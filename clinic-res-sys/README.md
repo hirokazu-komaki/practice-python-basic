@@ -18,7 +18,7 @@
 
 # 実現したい機能（仕様）
 [HumanClass(Object)]
-- 人がもつ基本情報で今回のシステムに必要なものを定義（名前、年齢、性別etc）
+- 人がもつ基本情報で今回のシステムに必要なものを定義（名前(カナも合わせて)、年齢、性別etc）
 
 [PatientClass(Human)]
 - Human Classを継承し、診察券のIDや症状を伝える機能を持たせる
@@ -39,6 +39,12 @@
 |age|int|年齢|
 |gender|str|性別|
 
+## method
+
+|メソッド名|処理内容|引数|戻り値|種類|
+|--:|--:|--:|--:|--:|
+|show_personal_info()|患者の情報を表示|-|-|instance|
+
 <br>
 
 [PatientClass(Human)]
@@ -48,7 +54,7 @@
 |--:|--:|--:|
 |symptoms|list|症状の内容（熱、気分、いつからetc）|
 |patient_id|int|診察券ID|
-|desired_date|str|予約希望日時|
+|desired_date|str|予約希望日時（"1/12 13:00"の様に指定）|
 
 <br>
 
